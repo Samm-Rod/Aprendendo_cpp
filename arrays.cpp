@@ -4,6 +4,8 @@
 
 #include <iostream>
 #include "arrays.h"
+
+#include <climits>
 #include <vector>
 
 // Contagem simples de 1 a 10
@@ -84,7 +86,7 @@ void maior_num() {
     std::cout << "*----- MAIOR NÚMERO -------* "<< '\n';
 
     int num = 0;
-    int maior = 0;
+    int maior = INT_MIN;
 
     for (int i = 1; i<=10; i++) {
         std::cout << "Digite o "<< i <<"º número: ";
